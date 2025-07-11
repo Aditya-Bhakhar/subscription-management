@@ -1,0 +1,32 @@
+# node.js
+node_modules/
+.env
+
+# Frontend 
+Frontend/node_modules/
+Frontend/.env
+Frontend/dist/
+
+# Backend
+Backend/node_modules/
+Backend/.env
+Backend/dist/
+Backend/uploads/profile_pictures/
+Backend/public/invoices/
+Backend/src/app.log
+Backend/subscription_management.png
+
+# Database
+Database/
+
+# Logs
+*.Log
+*.log
+
+# OS or Editor
+.DS_Store
+.vscode/
+
+# root
+Aditya.xlsx
+Subscription_management.xlsx
