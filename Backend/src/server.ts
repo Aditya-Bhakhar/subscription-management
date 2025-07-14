@@ -91,6 +91,8 @@ app.use("/api", routes);
 app.use(errorHandler);
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Serving on "http://${HOST}:${PORT}"`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Serving on "http://${HOST}:${PORT}"`);
+// });
+
+export default app;
