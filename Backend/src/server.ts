@@ -34,7 +34,7 @@ app.use(helmet());
 // Middleware - Plugins
 app.use(
   cors({
-    origin: [`http://${HOST}:${FRONTEND_PORT}`],
+    origin: "*",
     credentials: true,
   })
 );
