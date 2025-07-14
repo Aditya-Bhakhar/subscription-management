@@ -17,7 +17,6 @@ import helmet from "helmet";
 import listenForNewInvoices from "./services/listenForNewInvoices.js";
 
 import { ActivityLogService } from "./services/activityLogService.js";
-import serverless from 'serverless-http';
 import pool from "./db/pool.js";
 import { createActivityLogger } from "./middlewares/activityLogMiddleware.js";
 
@@ -92,8 +91,6 @@ app.use("/api", routes);
 app.use(errorHandler);
 
 // Start the server
-// app.listen(PORT, () => {
-//   console.log(`Serving on "http://${HOST}:${PORT}"`);
-// });
-
-export const handler = serverless(app);
+app.listen(PORT, () => {
+  console.log(`Serving on "http://${HOST}:${PORT}"`);
+});
