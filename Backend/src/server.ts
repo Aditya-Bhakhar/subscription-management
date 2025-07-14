@@ -76,11 +76,13 @@ app.use(
   })
 );
 
-// app.get("/", (req, res) => {
-//   res.json({
-//     message: "Welcome to the subscription management app!",
-//   });
-// });
+app.get("/", (req, res) => {
+  res.send({
+    message: "Welcome to the subscription management app!",
+    status: "success",
+    error: false
+  });
+});
 
 //API routes
 app.use("/api", routes);
